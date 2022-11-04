@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+:root {
+    --alcalinos: #bea0c7;
+    --alcalinoterreos: #d7a0c4;
+    --metalesdetransicion: #ebba52;
+    --lantanidos: #df9c61;
+    --actinidos: #d6947f;
+    --otrosmetales: #f4dc3b;
+    --metaloides: #d5da62;
+    --otrosnometales: #8eb68b;
+    --halogenos: #a0c8c8;
+    --gasesnobles: #a6c8ea;
+    --white: #fff;
+    --grey: #ded9d9;
+    --black: #000;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: var(--grey);
+    font-family: 'Space Mono', monospace;
+}
+
+
+h3.navbar-brand{
+    margin: 0 10px 0 0;
+    padding: 2px 0;
+    color: #fff;
+}
+ul.navbar-nav li a{
+    color: #fff;
+}
+.notFound{
+    text-align: center;
+    margin: 40px 0 0 0;
+}
+.notFound span{
+    color: red;
+    font-size: 45px;
+}
+.title{
+    text-align: center;
+    margin: 15px 0 5px 0;
+}
+.table{
+    display: grid;
+    margin: 40px 0 30px 0;
+    justify-content: center;
+    grid-template-columns: repeat(18, 80px);
+    grid-template-rows: repeat(10, 80px);
+    gap: 3px;
+}
+.groups{
+    list-style: none;
+    height: 80px;
+    width: 80px;
+    text-align: center;
+    grid-column-gap: 3px;
+
+}
+.group1, .group2, .group3, .group4, .group5, .group6{
+    grid-row-gap: 3px;
+}
+.group1{
+    display: grid;
+    grid-template-columns: repeat(1, 80px);  
+    grid-template-rows: 80px;
+
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 8;
+}
+.group2{
+    display: grid;
+    grid-template-columns: repeat(1, 80px);  
+    grid-template-rows: 80px;
+
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 8;
+}
+.group3{
+    display: grid;
+    grid-template-columns: repeat(10, 80px);  
+    grid-template-rows: 80px;
+
+    grid-column-start: 3;
+    grid-column-end: 13;
+    grid-row-start: 4;
+    grid-row-end: 8;
+}
+.group4{
+    display: grid;
+    grid-template-columns: repeat(5, 80px);  
+    grid-template-rows: 80px;
+
+    grid-column-start: 13;
+    grid-column-end: 17;
+    grid-row-start: 2;
+    grid-row-end: 8;
+}
+.group5{
+    display: grid;
+    grid-template-columns: repeat(1, 80px);  
+    grid-template-rows: 80px;
+
+    grid-column-start: 18;
+    grid-column-end: 19;
+    grid-row-start: 1;
+    grid-row-end: 8;
+}
+.group6{
+    display: grid;
+    grid-template-columns: repeat(15, 80px);  
+    grid-template-rows: 80px;
+
+    grid-column-start: 4;
+    grid-column-end: 19;
+    grid-row-start: 9;
+    grid-row-end: 12;
+}
+
+
+
+span{
+    font-size: 10px;
+    padding: 0 2px!important;
+}
+li.list{
+    font-size: 22px;
+    font-weight: bold;
+    padding: 0 2px!important;
+}
+/* Colores de los elementos */
+.Alcalinos, .alcalinos{
+    background-color: var(--alcalinos);
+}
+.Alcalinoterreos, .alcalinoterreos{
+    background-color: var(--alcalinoterreos);
+}
+.Metales, .metalesdetransi{
+    background-color: var(--metalesdetransicion);
+     
+}
+.Lantanidos, .lantanidos{
+    background-color: var(--lantanidos);
+}
+.Actinidos, .actinidos{
+    background-color: var(--actinidos);;
+}
+.OtrosMetales, .otrosmetales{
+    background-color: var(--otrosmetales);
+}
+.Metaloides, .metaloides{
+    background-color: var(--metaloides);
+}
+.OtrosNoMetales, .otrosnometales{
+    background-color: var(--otrosnometales);
+}
+.Halogenos, .halogenos{
+    background-color: var(--halogenos);
+}
+.GasesNobles, .gasesnobles{
+    background-color: var(--gasesnobles);
+}
+.grey_block{
+    background-color: rgb(192, 183, 183);
+}
+
+.listElements{
+    display: grid;;
+    grid-template-columns: repeat(10, 150px);
+    grid-template-rows: repeat(3, 50px);
+    gap: 3px;
+    margin: 0;
+}
+.listElements ul li{
+    list-style: none;
+    font-size: 15px;
+    min-height: 25px;
+    width: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.elements{
+    display: grid;
+    grid-template-columns: repeat(9, 160px);  
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 9;
+    gap: 3px;
+}
+/* Block Elements */
+.blockElements{
+    background-color: #ccc; 
+    text-align: center;
+    display: none;
+}
+.blockElements:first-child{
+    color: rgb(220, 26, 26);
+}
+.blockElements li{
+    font-size: 15px;
+    list-style: none;
+}

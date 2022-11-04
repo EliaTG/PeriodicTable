@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/bootstrap/bootstrap.min.css">
+      <link rel="stylesheet" href="/assets/css/style.css">
+    <title>Home</title>
+</head>
+<body>
+    <h1 class="title">Elements of Periodic Table</h1>
+    <div class="table">
+                <div class="group1 groups">
+                                {{#each groupElement1}}
+                                        <div class={{this.group}}>
+                                            <span class={{this.number}}>{{this.number}}</span>
+                                            <li class="list">{{this.symbol}}</li>
+                                            <span class="name">{{this.name}}</span>
+                                        </div>
+                                      {{!-- <div class="blockElements">
+                                            <span class="number">404</span>
+                                            <li class="list">Not Found</li>
+                                     </div>  --}}
+                                {{/each}}
+                </div>
+                <div class="group2 groups">
+                    {{#each groupElement2}}
+                                <div class={{this.group}}>
+                                    <span class="number">{{this.number}}</span>
+                                    <li class="list">{{this.symbol}}</li>
+                                    <span class="name">{{this.name}}</span>
+                                </div>
+                    {{/each}}
+                </div>
+                <div class="group3 groups">
+                    {{#each groupElement3}}
+                                <div class={{this.group}}>
+                                    <span class="number">{{this.number}}</span>
+                                    <li class="list">{{this.symbol}}</li>
+                                    <span class="name">{{this.name}}</span>
+                                </div>
+                    {{/each}}
+                </div>
+                <div class="group4 groups">
+                    {{#each groupElement4}}
+                                <div class={{this.group}}>
+                                    <span class="number">{{this.number}}</span>
+                                    <li class="list">{{this.symbol}}</li>
+                                    <span class="name">{{this.name}}</span>
+                                </div>
+                    {{/each}}
+                </div>
+                <div class="group5 groups">
+                    {{#each groupElement5}}
+                                <div class={{this.group}}>
+                                    <span class="number">{{this.number}}</span>
+                                    <li class="list">{{this.symbol}}</li>
+                                    <span class="name">{{this.name}}</span>
+                                </div>
+                    {{/each}}
+                </div>
+                <div class="group6 groups">
+                            {{#each groupElement6}}
+                                <div class={{this.group}}>
+                                    <span class="number">{{this.number}}</span>
+                                    <li class="list">{{this.symbol}}</li>
+                                    <span class="name">{{this.name}}</span>
+                                </div>
+                            {{/each}}         
+                </div>
+               
+    </div>
+    <div class="listElements">
+        <ul>
+            <div class="elements">
+                <li class="alcalinos">Alcalinos</li>
+                <li class="alcalinoterreos">Alcalinoterreos</li>
+                <li class="metalesdetransi">Metales de Transición</li>
+                <div class="lan_acti">
+                    <li class="lantanidos">Lantánidos</li>
+                    <li class="actinidos">Actínidos</li>
+                </div>
+                <li class="otrosmetales">Otros Metales</li>
+                <li class="metaloides">Metaloides</li>
+                <li class="otrosnometales">Otros No Metales</li>
+                <li class="halogenos">Halógenos</li>
+                <li class="gasesnobles">Gases Nobles</li>
+            </div> 
+        </ul>
+    </div>
+</body>
+<script src="/assets/js/bootstrap/bootstrap.min.js"></script>
+</html>
+
